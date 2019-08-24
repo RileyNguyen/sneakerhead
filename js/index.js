@@ -106,26 +106,26 @@ $(".pagination-inner a").on("click", function() {
 });
 const one = {
   template: `<z-view style="background: none">
-    <img slot="image" src="../img/product/air-jordan_burned.png" width="80%" height="50%" />
+    <img slot="image" src="img/product/air-jordan_burned.png" width="80%" height="50%" />
     <section slot="extension">
       <z-spot 
         button
         :angle="-45"  
         size="medium" 
         to-view="mix">
-        <img slot="image" src="../img/product/air-jordan_burned.png" width="80%" height="50%" />
+        <img slot="image" src="img/product/air-jordan_burned.png" width="80%" height="50%" />
       </z-spot>
       <z-spot 
         :angle="180"  
         size="medium" 
         to-view="mix">
-        <img slot="image" src="../img/product/air-jordan_burned.png" width="80%" height="50%" />
+        <img slot="image" src="img/product/air-jordan_burned.png" width="80%" height="50%" />
       </z-spot>
       <z-spot 
         :angle="45"  
         size="medium" 
         to-view="mix">
-        <img slot="image" src="../img/product/air-jordan_burned.png" width="80%" height="50%" />
+        <img slot="image" src="img/product/air-jordan_burned.png" width="80%" height="50%" />
       </z-spot>
     </section>
 </z-view>`
@@ -134,7 +134,7 @@ const mix = {
   name: "mix",
   template: `<z-view>
       
-          <img slot="image" src="../img/product/air-jordan_burned.png" width="80%" height="55%" />
+          <img slot="image" src="img/product/air-jordan_burned.png" width="80%" height="55%" />
     
   </z-view>`
 };
