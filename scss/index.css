@@ -497,12 +497,12 @@ main .products .content {
   padding-top: 20px;
 }
 
-main .products .content .row .col-lg-3 .info-product h2 {
+main .products .content .row .col-3 .info-product h2 {
   color: #ce933d;
   margin: 30px 0;
 }
 
-main .products .content .row .col-lg-3 .info-product button {
+main .products .content .row .col-3 .info-product button {
   position: absolute;
   border: 1px solid white !important;
   color: white !important;
@@ -515,7 +515,7 @@ main .products .content .row .col-lg-3 .info-product button {
   border-radius: 20px;
 }
 
-main .products .content .row .col-lg-3 .info-product button::after {
+main .products .content .row .col-3 .info-product button::after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -527,7 +527,7 @@ main .products .content .row .col-lg-3 .info-product button::after {
   transition: 0.5s;
 }
 
-main .products .content .row .col-lg-3 .info-product button:hover {
+main .products .content .row .col-3 .info-product button:hover {
   color: white !important;
   border: none;
   outline: none;
@@ -536,20 +536,20 @@ main .products .content .row .col-lg-3 .info-product button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-main .products .content .row .col-lg-3 .info-product button:hover::after {
+main .products .content .row .col-3 .info-product button:hover::after {
   opacity: 1;
   right: 10px;
 }
 
-main .products .content .row .col-lg-3:first-child {
+main .products .content .row .col-3:first-child {
   padding-left: 120px;
 }
 
-main .products .content .row .col-lg-3:last-child {
+main .products .content .row .col-3:last-child {
   padding-right: 100px;
 }
 
-main .products .content .row .col-lg-3:last-child .size p {
+main .products .content .row .col-3:last-child .size p {
   display: inline-block;
   padding: 3px 15px;
   border: 0.5px solid white;
@@ -558,28 +558,28 @@ main .products .content .row .col-lg-3:last-child .size p {
   cursor: pointer;
 }
 
-main .products .content .row .col-lg-3:last-child .size p:hover {
+main .products .content .row .col-3:last-child .size p:hover {
   background-color: azure;
 }
 
-main .products .content .row .col-lg-3:last-child .size p:active {
+main .products .content .row .col-3:last-child .size p:active {
   background-color: azure;
 }
 
-main .products .content .row .col-lg-3:last-child .rated div {
+main .products .content .row .col-3:last-child .rated div {
   display: inline-block;
   margin-left: 5px;
 }
 
-main .products .content .row .col-lg-3:last-child .rated div i {
+main .products .content .row .col-3:last-child .rated div i {
   color: yellow;
 }
 
-main .products .content .row .col-lg-3:last-child .rated div i:last-child {
+main .products .content .row .col-3:last-child .rated div i:last-child {
   color: rgba(255, 255, 255, 0.4);
 }
 
-main .products .content .row .col-lg-6 {
+main .products .content .row .col-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,32 +591,32 @@ main .products .content .row .col-lg-6 {
           align-items: center;
 }
 
-main .products .content .row .col-lg-6 #app {
+main .products .content .row .col-6 #app {
   width: 100% !important;
   z-index: 100;
   height: 100% !important;
 }
 
-main .products .content .row .col-lg-6 #app .z-canvas {
+main .products .content .row .col-6 #app .z-canvas {
   background: none !important;
 }
 
-main .products .content .row .col-lg-6 #app .z-canvas div section .primary {
+main .products .content .row .col-6 #app .z-canvas div section .primary {
   background: none !important;
 }
 
-main .products .content .row .col-lg-6 #app .z-canvas div section .is-current-view {
+main .products .content .row .col-6 #app .z-canvas div section .is-current-view {
   border: 1px solid black !important;
 }
 
-main .products .content .row .col-lg-6 #app .is-full-mode {
+main .products .content .row .col-6 #app .is-full-mode {
   position: inherit !important;
   width: 100% !important;
   height: 100% !important;
   background: none !important;
 }
 
-main .products .content .row .col-lg-6 #app .is-full-mode .z-spot {
+main .products .content .row .col-6 #app .is-full-mode .z-spot {
   background-color: white !important;
   border-color: tomato !important;
   cursor: -webkit-zoom-in !important;
