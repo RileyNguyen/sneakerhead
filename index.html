@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/5c2f2f612d.js"></script>
+  <!-- FullPage.js\CSS -->
+  <link rel="stylesheet" href="scss/fullpage.css" />
+  <!-- Carousel -->
+  <link rel="stylesheet" href="scss/owl.carousel.min.css">
+  <link rel="stylesheet" href="scss/owl.theme.default.min.css">
+  <!-- GG fonts  -->
+  <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet'>
+  <!-- Vue-Multiselect -->
+  <link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+  <!-- Image Hover -->
+  <link rel="stylesheet" href="scss/imagehover.min.css">
+  <!-- Link-pagination -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet">
+  <!-- zircle -->
+  <link href="https://unpkg.com/zircle/dist/zircle.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/index.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/nav/sneakerhead-logo.png" width="100px" /></a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto text-uppercase font-weight-bold">
+          <li class="nav-item active" data-menuanchor="firstPage">
+            <a class="nav-link text-light" href="#section0">Home </a>
+          </li>
+          <li class="nav-item" data-menuanchor="secondPage">
+            <a class="nav-link text-light" href="#section1">Men</a>
+          </li>
+          <li class="nav-item" data-menuanchor="3rdPage">
+            <a class="nav-link text-light" href="#section1">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#section1">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="shop.html">About Us</a>
+          </li>
+          <li class="nav-item searchbar">
+            <!-- <input class="search_input" type="text" name="" placeholder="Search...">
+            <a href="#" class="search_icon"><i class="fas fa-search"></i></a> -->
+            <a href="#" id="sign-in">SignIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+  <main class="container-fluid" id="fullpage">
+    <div class="home section" id="section0">
+      <div class="back-video">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+          <source src="video/video.mp4" type="video/mp4" />
+        </video>
+
+      </div>
+      <div data-menuanchor="secondPage">
+        <a id="view-shop" class="btn" href="#section1">View Shop</a>
+      </div>
+      <div class="contact">
+        <ul>
+          <li>
+            <a href="https://fb.com/n.trongvuong98" target="_blank"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rileyy.ng98/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCRthRrv06q1iOl86-tTKJhg"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="about-us">
+        <div>
+          <h2>SNEAKER HEAD</h2>
+        </div>
+        <div class="line">
+          <div></div>
+        </div>
+        <div class="location">
+          <p>RileyyNguyen</p>
+        </div>
+      </div>
+    </div>
+    <div class="all-products" id="section1">
+      <section class="content container-fluid">
+        <div class="row">
+          <div class="col-3 pl-4">
+            <div class="price-range">
+              <div>
+                <h4><b>Price</b> Range</h4>
+                <p>$500 - $10 200</p>
+                <input type="range">
+              </div>
+            </div>
+            <div class="size-filter mt-3">
+              <div class="size">
+                <span>Size: </span>
+                <p>6</p>
+                <p>6.5</p>
+                <p>7</p>
+                <p>7.5</p>
+                <p>8</p>
+                <p>8.5</p>
+                <p>9</p>
+                <p>9.5</p>
+                <p>10</p>
+                <p>10.5</p>
+                <p>11</p>
+                <p>11.5</p>
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="sort-by d-flex">
+              <div>
+                <div class="sel sel--black-panther">
+                  <select name="select-profession" id="select-profession">
+                    <option value="" disabled>Sort by ...</option>
+                    <option value="hacker">Our Top Pick</option>
+                    <option value="developer">New Arrivals</option>
+                    <option value="programmer">Bestsellers</option>
+                    <option value="designer">Price High</option>
+                    <option value="designer">Price Low</option>
+                  </select>
+                </div>
+              </div>
+              <div class="pagination-page">
+              </div>
+            </div>
+            <div class="shop d-flex flex-wrap">
+              <div class="d-flex flex-wrap">
+                <div class="product_item">
+                  <figure class="imghvr-zoom-out-flip-vert">
+                    <img src="img/product/air-jordan_burned.png">
+                    <figcaption>
+                      <p></p>
+                      <h2></h2>
+                      <button type="button">Xem chi tiết</button>
+                    </figcaption>
+                    <a href="#section2"></a>
+                  </figure>
+                </div>
+                <div class="product_item">
+                  <figure class="imghvr-zoom-out-flip-vert">
+                    <img src="img/140740_04.jpg">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                    <a href="#section2"></a>
+                  </figure>
+                </div>
+                <div class="product_item">
+                  <figure class="imghvr-zoom-out-flip-vert">
+                    <img src="img/140740_04.jpg">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                    <a href="#section2"></a>
+                  </figure>
+                </div>
+                <div class="product_item">
+                  <figure class="imghvr-zoom-out-flip-vert">
+                    <img src="img/140740_04.jpg">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                    <a href="#section2"></a>
+                  </figure>
+                </div>
+                <div class="product_item">
+                  <figure class="imghvr-zoom-out-flip-vert">
+                    <img src="img/140740_04.jpg">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                    <a href="#section2"></a>
+                  </figure>
+                </div>
+                <div class="product_item">
+                  <figure class="imghvr-zoom-out-flip-vert">
+                    <img src="img/140740_04.jpg">
+                    <figcaption>
+                      // Hover Content
+                    </figcaption>
+                    <a href="#section2"></a>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="products section" id="section2">
+      <section class="content container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-sm-12">
+            <div class="info-product">
+              <h1>AIR JORDAN 1 CHICAGO '2015'</h1>
+              <h2>$360</h2>
+              <button id="get-it-now" class="btn">Get It Now</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div id="app">
+              <z-canvas :views='$options.components' style="background-color: #34495e">
+              </z-canvas>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="size">
+              <span>Size: </span>
+              <p>6</p>
+              <p>6.5</p>
+              <p>7</p>
+              <p>7.5</p>
+              <p>8</p>
+              <p>8.5</p>
+              <p>9</p>
+              <p>9.5</p>
+              <p>10</p>
+              <p>10.5</p>
+              <p>11</p>
+              <p>11.5</p>
+              <p>12</p>
+            </div>
+            <div class="rated">
+              <span>Rated: </span>
+              <div>
+                <div class="star-container d-flex">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3" id="recommended">
+            <h4 class="text-center">RECOMMENDED FOR YOU:</h4>
+          </div>
+          <div class="col-lg-9 col-sm-12">
+            <div class="owl-carousel">
+              <div class="product">
+                <div class="product-detail">
+                  <div class="d-flex">
+                    <div class="img"><img
+                        src="img/product/145-1452366_air-jordan-1-png-clip-art-free-download_burned (2).png"></div>
+                    <div class="info">
+                      <div>
+                        <h5>Air Jordan 1 Gymred</h5>
+                        <div class="star-container d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>$368</p>
+                        <div class="add-product"><a href="#"><i class="fas fa-plus"></i><i class="fas fa-check"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-detail">
+                  <div class="d-flex">
+                    <div class="img"><img src="img/product/air-jordan_burned.png"></div>
+                    <div class="info">
+                      <div>
+                        <h5>Air Jordan 1 Gymred</h5>
+                        <div class="star-container d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>$368</p>
+                        <div class="add-product"><a href="#"><i class="fas fa-plus"></i><i class="fas fa-check"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-detail">
+                  <div class="d-flex">
+                    <div class="img"><img
+                        src="img/product/145-1452366_air-jordan-1-png-clip-art-free-download_burned (2).png"></div>
+                    <div class="info">
+                      <div>
+                        <h5>Air Jordan 1 Gymred</h5>
+                        <div class="star-container d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>$368</p>
+                        <div class="add-product"><a href="#"><i class="fas fa-plus"></i><i class="fas fa-check"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-detail">
+                  <div class="d-flex">
+                    <div class="img"><img src="img/product/air-jordan_burned.png"></div>
+                    <div class="info">
+                      <div>
+                        <h5>Air Jordan 1 Gymred</h5>
+                        <div class="star-container d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>$368</p>
+                        <div class="add-product"><a href="#"><i class="fas fa-plus"></i><i class="fas fa-check"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product">
+                <div class="product-detail">
+                  <div class="d-flex">
+                    <div class="img"><img
+                        src="img/product/145-1452366_air-jordan-1-png-clip-art-free-download_burned (2).png"></div>
+                    <div class="info">
+                      <div>
+                        <h5>Air Jordan 1 Gymred</h5>
+                        <div class="star-container d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p>$368</p>
+                        <div class="add-product "><a href="#"><i class="fas fa-plus"></i><i
+                              class="fas fa-check"></i></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/106/three.min.js"></script>
+  <script src="js/easings.min.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
+  <script src="js/fullpage.js"></script>
+  <script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/zircle"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
